@@ -103,3 +103,9 @@ main form input[type=submit]:hover {
 	background-color:#dfdfdf;
 	cursor:pointer;
 }
+
+main div a {
+	text-decoration: none;
+	color: #A7C4C2;
+	font-size: 30px;
+}
