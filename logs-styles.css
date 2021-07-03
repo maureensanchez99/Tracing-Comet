@@ -11,13 +11,30 @@ body {
 }
 
 nav {
-	padding-top: 10px;
-	padding-bottom: 10px;
 	text-align: center;
 	background: #EE964B;
 	color: #FCF7F8;
 	font-size: 40px;
 	box-shadow: 0px 2px 4px 3px rgba(0, 0, 0, 0.25);
+	
+	position:absolute;
+	top:0;
+	right:0;
+	display:flex;
+	flex-direction:row-reverse;
+	width:40vw;
+	height:50px;
+	align-items:center;
+	justify-content:flex-start;
+	gap: 20px;
+	margin-right:20px;
+}
+
+nav a img {
+	width:32px;
+	height:32px;
+	border-radius:50%;
+	object-fit: contains;
 }
 
 .entries h1 {

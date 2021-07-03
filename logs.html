@@ -12,10 +12,25 @@
 	
 	<body>
 	    <nav>
+	    	{{^private}}
+				<a href='login'>Login</a>
+				<a href='signup'>Signup</a>
+			{{/private}}
+			
+			{{#private}}
+				<a href='account'>
+					<img src='{{avatar}}'>
+				</a>
+				<a onclick='logout()'>Logout</a>
+			{{/private}}		
+			
 	    	<h1> Logs </h1>
 	    </nav>
 	    
 	    <main>
+	    	<div class="new-entry">
+	    		<a href='new-log'> Add Log </a>
+	    	</div>
 		    <div class="entries">
 		        <h1> Date - Short Description </h1>
 		        <p> Detailed description with you met, what time of day, and where you guys went. </p>
